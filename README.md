@@ -2,7 +2,7 @@
 <div id="top" align="center">
 
 <p align="center">
-  <img src="https://ik.imagekit.io/StarBurger/SimScale/title_2k.gif">
+  <img src="https://ik.imagekit.io/StarBurger/SimScale/title_1080p.gif">
 </p>
 
 # **Learning to Drive via Real-World Simulation at Scale**
@@ -16,7 +16,7 @@
 > [Haochen Liu](https://georgeliu233.github.io/), 
 > [Jiazhi Yang](https://github.com/YTEP-ZHI), 
 > [Yihang Qiu](https://github.com/gihharwtw),
-> [Guang Li](https://github.com/gihharwtw),
+> Guang Li,
 > Junli Wang,
 > [Yinfeng Gao](https://scholar.google.com/citations?user=VTn0hqIAAAAJ&hl=en),
 > [Zhang Zhang](https://scholar.google.com/citations?user=rnRNwEMAAAAJ&hl=en),
