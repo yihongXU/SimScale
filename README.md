@@ -41,9 +41,9 @@
 ## 🔥 Highlights
 
 
-- 🏗️ A scalable simulation pipepline that synthesizes diverse and high-fidelity reactive driving scenarios with pseudo-expert. 
-- 🚀 An effective sim-real co-training strategy that improves robustness and generalization across end-to-end planners. 
-- 🔬 A comprehensive recipe that reveals crucial insights into the underlying scaling properties of sim-real learning systems.
+- 🏗️ A scalable simulation pipepline that synthesizes diverse and high-fidelity reactive driving scenarios with pseudo-expert demonstrations. 
+- 🚀 An effective sim-real co-training strategy that improves robustness and generalization synergistically across various end-to-end planners. 
+- 🔬 A comprehensive recipe that reveals crucial insights into the underlying scaling properties of sim-real learning systems for end-to-end autonomy.
 
 
 ## 📢 News
