@@ -10,6 +10,8 @@
 [![Hugging Face](https://img.shields.io/badge/PAGE-HF-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/papers/2511.23369) 
 [![License](https://img.shields.io/badge/License-Apache--2.0-2380C1?style=for-the-badge&)](https://github.com/OpenDriveLab/SimScale/blob/main/LICENSE) 
 
+# **Learning to Drive via Real-World Simulation at Scale**
+
 </div>
 
 
