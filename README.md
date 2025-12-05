@@ -5,8 +5,10 @@
   <img src="https://ik.imagekit.io/StarBurger/SimScale/title_1080p.gif">
 </p>
 
-# **Learning to Drive via Real-World Simulation at Scale**
-
+[![Paper](https://img.shields.io/badge/ArXiv-2511.23369-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.23369)
+[![Home](https://img.shields.io/badge/page-project-5F259F?style=for-the-badge&logo=homepage&logoColor=white)](https://opendrivelab.com/SimScale/) 
+[![Hugging Face](https://img.shields.io/badge/PAGE-HF-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/papers/2511.23369) 
+[![License](https://img.shields.io/badge/License-Apache--2.0-2380C1?style=for-the-badge&)](https://github.com/OpenDriveLab/SimScale/blob/main/LICENSE) 
 
 </div>
 
