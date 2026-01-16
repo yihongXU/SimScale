@@ -1,6 +1,7 @@
 cd $HOME # Change to your desired download directory
 
 repo="https://huggingface.co/datasets/OpenDriveLab/SimScale/resolve/main"
+repo_fut="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/resolve/main"
 
 # 1. simulation data with planner-based pseudo-expert
 rounds=5
@@ -22,8 +23,14 @@ for round in $(seq 0 $((rounds - 1))); do
         rm simscale_pdm_v1.0-${round}_sensor_blobs_hist_${idx}.tar.gz
     done
 
-    # 3. future sensor data
-    # [TBD]
+    # 3. future sensor data (OPTIONAL)
+    split=${splits[$round]}
+    for idx in $(seq 0 $((split - 1))); do
+        wget ${repo_fut}/SimScale_data/synthetic_reaction_pdm_v1.0-${round}/simscale_pdm_v1.0-${round}_sensor_blobs_fut/simscale_pdm_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+        echo "[Planner-based] Downloaded fut sensor data ${idx} for round ${round}"
+        tar -xzvf simscale_pdm_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+        rm simscale_pdm_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+    done
 
 done
 
@@ -47,7 +54,13 @@ for round in $(seq 0 $((rounds - 1))); do
         rm simscale_recovery_v1.0-${round}_sensor_blobs_hist_${idx}.tar.gz
     done
 
-    # 3. future sensor data
-    # [TBD]
+    # 3. future sensor data (OPTIONAL)
+    split=${splits[$round]}
+    for idx in $(seq 0 $((split - 1))); do
+        wget ${repo_fut}/SimScale_data/synthetic_reaction_recovery_v1.0-${round}/simscale_recovery_v1.0-${round}_sensor_blobs_fut/simscale_recovery_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+        echo "[Recovery-based] Downloaded fut sensor data ${idx} for round ${round}"
+        tar -xzvf simscale_recovery_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+        rm simscale_recovery_v1.0-${round}_sensor_blobs_fut_${idx}.tar.gz
+    done
 
 done

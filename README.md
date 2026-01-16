@@ -10,12 +10,11 @@
 [![Paper](https://img.shields.io/badge/ArXiv-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.23369)
 [![Home](https://img.shields.io/badge/project_page-5F259F?style=for-the-badge&logo=homepage&logoColor=white)](https://opendrivelab.com/SimScale/) 
 [![Hugging Face](https://img.shields.io/badge/hugging_face-ffc107?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/OpenDriveLab/SimScale) 
-[![License](https://img.shields.io/badge/Apache--2.0-2380C1?style=for-the-badge&)](https://github.com/OpenDriveLab/SimScale/blob/main/LICENSE) 
+[![ModelScope](https://img.shields.io/badge/modelscope-624AFF?style=for-the-badge&logo=modelscope&logoColor=white)](https://modelscope.cn/datasets/OpenDriveLab/SimScale) 
+[![License](https://img.shields.io/badge/Apache--2.0-019B8F?style=for-the-badge&logo=apache)](https://github.com/OpenDriveLab/SimScale/blob/main/LICENSE) 
 
 
 </div>
-
-
 <div id="top" align="center">
 <p align="center">
 <img src="assets/teaser.png" >
@@ -40,11 +39,8 @@
 > 
 >
 > - 📧 Primary Contact: Haochen Tian (tianhaochen2023@ia.ac.cn)
-> - 📜 Materials: 🌐 [𝕏](https://x.com/OpenDriveLab/status/1999507869633527845) | 📰 [Media](https://mp.weixin.qq.com/s/OGV3Xlb0bHSSSloG11qFJA) | 🗂️ [Slides](https://docs.google.com/presentation/d/17qbsKZU9jdw7MfiPk7hZelaLb3leR2M76gPcMkuf1MI/edit?usp=sharing)
+> - 📜 Materials: 🌐 [𝕏](https://x.com/OpenDriveLab/status/1999507869633527845) | 📰 [Media](https://mp.weixin.qq.com/s/OGV3Xlb0bHSSSloG11qFJA) | 🗂️ [Slides](https://docs.google.com/presentation/d/17qbsKZU9jdw7MfiPk7hZelaLb3leR2M76gPcMkuf1MI/edit?usp=sharing) | 🎬 [Talk (in Chinese)](https://www.bilibili.com/video/BV1tqrEBNECQ)
 > - 🖊️ Joint effort by CASIA, OpenDriveLab at HKU, and Xiaomi EV.
-<!-- >
-> 📜 [[technical report](https://arxiv.org/abs/2511.23369)],
-> 🏠 [[project page](https://opendrivelab.com/SimScale)] -->
 
 ---
 
@@ -56,14 +52,15 @@
 
 
 ## 📢 News
+- **`[2025/1/16]`** We released the data and models on 👾 ModelScope to better serve users in China.
 - **`[2026/1/6]`** We released the code **v1.0**.
-- **`[2025/12/31]`** We released the data, and models **v1.0**. Happy New Year ! 🎄
+- **`[2025/12/31]`** We released the data and models **v1.0** on 🤗 Hugging Face. Happy New Year ! 🎄
 - **`[2025/12/1]`** We released our [paper](https://arxiv.org/abs/2511.23369) on arXiv. 
 
 
 ## 📋 TODO List
 - [ ] More Visualization Results.
-- [ ] Sensors Fut. (Uploading)
+- [x] Future Sensors Data.
 - [x] Sim-Real Co-training Code release (Jan. 2026).
 - [x] Simulation Data release (Dec. 2025).
 - [x] Checkpoints release (Dec. 2025).
@@ -72,9 +69,7 @@
 
 ## 📌 Table of Contents
 
-<!-- - [📢 News](#news)
-- [📋 TODO List](#todo-list) -->
-- 🤗 [Model Zoo](#-model-zoo)
+- 🏛️ [Model Zoo](#-model-zoo)
 - 🎯 [Getting Started](#-getting-started)
 - 📦 [Data Preparation](#-data-preparation)
   - [Download Dataset](#1-download-dataset)
@@ -87,7 +82,7 @@
   - [NAVSIM v2 navtest](#navsim-v2-navtest)
 - ⭐ [License and Citation](#-license-and-citation) 
 
-## 🤗 Model Zoo
+## 🏛️ Model Zoo
 
 <table>
   <tr style="text-align: center;">
@@ -112,9 +107,12 @@
     <td>ResNet34</td>
     <td>w/ pseudo-expert</td>
     <td><a href="./assets/csv/LTF/ltf_sim_navhard.csv">30.3</a> | +6.9</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/LTF/ltf_sim_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/LTF/ltf_sim_navhard.ckpt">HF</a> / 
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FLTF%2Fltf_sim_navtest.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/LTF/ltf_sim_navtest.csv">84.4</a> | +2.9</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/LTF/ltf_sim_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/LTF/ltf_sim_navtest.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FLTF%2Fltf_sim_navhard.ckpt?id=170866">MS</a></td>
+    </td>
   </tr>
 
   <!-- DiffusionDrive -->
@@ -123,9 +121,12 @@
     <td>ResNet34</td>
     <td>w/ pseudo-expert</td>
     <td><a href="./assets/csv/DiffusionDrive/diffusiondrive_sim_navhard.csv">32.6</a> | +5.1</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/DiffusionDrive/diffusiondrive_sim_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/DiffusionDrive/diffusiondrive_sim_navhard.ckpt">HF</a> / 
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FDiffusionDrive%2Fdiffusiondrive_sim_navhard.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/DiffusionDrive/diffusiondrive_sim_navtest.csv">85.9</a> | +1.7</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/DiffusionDrive/diffusiondrive_sim_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/DiffusionDrive/diffusiondrive_sim_navtest.ckpt">HF</a> / 
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FDiffusionDrive%2Fdiffusiondrive_sim_navtest.ckpt?id=170866">MS</a></td>
+    
   </tr>
 
   <!-- GTRS-Dense block -->
@@ -134,34 +135,45 @@
     <td rowspan="2">ResNet34</td>
     <td>w/ pseudo-expert</td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_resnet_sim_expert_navhard.csv">46.1</a> | +7.8</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_expert_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_expert_navhard.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_resnet_sim_expert_navhard.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_resnet_sim_expert_navtest.csv">84.0</a> | +1.7</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_expert_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_expert_navtest.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_resnet_sim_expert_navtest.ckpt?id=170866">MS</a></td>
+
   </tr>
 
   <tr>
     <td>rewards only</td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_resnet_sim_expert_navhard.csv">46.9</a> | +8.6</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_reward_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_reward_navhard.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_resnet_sim_reward_navhard.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_resnet_sim_reward_navtest.csv">84.6</a> | +2.3</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_reward_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_resnet_sim_reward_navtest.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_resnet_sim_reward_navtest.ckpt?id=170866">MS</a></td>
+
   </tr>
 
   <tr>
     <td rowspan="2">V2-99</td>
     <td>w/ pseudo-expert</td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_vov_sim_expert_navhard.csv">47.7</a> | +5.8</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_expert_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_expert_navhard.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_vov_sim_expert_navhard.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_vov_sim_expert_navtest.csv">84.5</a> | +0.5</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_expert_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_expert_navtest.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_vov_sim_expert_navtest.ckpt?id=170866">MS</a></td>
   </tr>
 
   <tr>
     <td>rewards only</td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_vov_sim_reward_navhard.csv">48.0</a> | +6.1</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_reward_navhard.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_reward_navhard.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_vov_sim_reward_navhard.ckpt?id=170866">MS</a></td>
     <td><a href="./assets/csv/GTRS_Dense/gtrs_dense_vov_sim_reward_navtest.csv">84.8</a> | +0.8</td>
-    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_reward_navtest.ckpt">Link</a></td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/blob/main/SimScale_ckpts/GTRS_Dense/gtrs_dense_vov_sim_reward_navtest.ckpt">HF</a> /
+    <a href="https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/file/view/master/SimScale_ckpts%2FGTRS_Dense%2Fgtrs_dense_vov_sim_reward_navtest.ckpt?id=170866">MS</a></td>
+
   </tr>
 </table>
 
@@ -188,17 +200,17 @@ pip install -e .
 
 ## 📦 Data Preparation
 
-Our released simulation data is based on [nuPlan](https://www.nuscenes.org/nuplan) and [NAVSIM](https://github.com/autonomousvision/navsim). **We recommend first preparing the real-world data by following the instructions in [Download NAVSIM](https://github.com/autonomousvision/navsim/blob/main/docs/install.md#2-download-the-dataset). If you plan to use GTRS, please also refer [Download NAVSIM](./docs/install.md#2-download-the-dataset).**
+Our released simulation data is based on [nuPlan](https://www.nuscenes.org/nuplan) and [NAVSIM](https://github.com/autonomousvision/navsim). **We recommend first preparing the real-world data by following the instructions in [Download NAVSIM](https://github.com/autonomousvision/navsim/blob/main/docs/install.md#2-download-the-dataset). If you plan to use GTRS, please directly refer [Download NAVSIM](./docs/install.md#2-download-the-dataset).**
 
 ### 1. Download Dataset
 
-We provide a [🤗 script](./tools/download.sh) for downloading the simulation data.
+We provide 🤗 [Script (Hugging Face)](./tools/download_hf.sh) and 👾 [Script (ModelScope)](./tools/download_ms) (users in China) for downloading the simulation data .
 
 Our simulation data format follows that of [OpenScene](https://github.com/OpenDriveLab/OpenScene/blob/main/docs/getting_started.md#download-data), with each clip/log has a fixed temporal horizon of 6 seconds at 2 Hz (2 s history + 4 s future), which are stored separately in `sensor_blobs_hist` and `sensor_blobs_fut`, respectively. 
 **For policy training, `sensor_blobs_hist` alone is sufficient.**
 
-<details>
-<summary><strong>📊  Overview Table of Simulated Synthetic Data</strong></summary>
+#### 📊  Overview Table of Simulated Synthetic Data
+
 <table>
   <tr style="text-align: center;">
     <th rowspan="1">Split / Sim. Round</th>
@@ -206,101 +218,131 @@ Our simulation data format follows that of [OpenScene](https://github.com/OpenDr
     <th rowspan="1">Logs</th>
     <th rowspan="1">Sensors_Hist</th>
     <th rowspan="1">Sensors_Fut</th>
+    <th rowspan="1">Link</th>
   </tr>
   
-  <th colspan="5">Planner-based Pseudo-Expert</th>
+  <th colspan="6">Planner-based Pseudo-Expert</th>
 
   <tr >
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-0.yaml">synthetic_reaction_pdm_v1.0-0</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-0.yaml">reaction_pdm_v1.0-0</a></td>
     <td>65K</td>
     <td>9.9GB</td>
     <td>569GB</td>
     <td>1.2T</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-0">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-0">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_pdm_v1.0-0">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-1.yaml">synthetic_reaction_pdm_v1.0-1</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-1.yaml">reaction_pdm_v1.0-1</a></td>
     <td>55K</td>
     <td>8.5GB</td>
     <td>448GB</td>
     <td>964GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-1">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-1">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_pdm_v1.0-1">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-2.yaml">synthetic_reaction_pdm_v1.0-2</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-2.yaml">reaction_pdm_v1.0-2</a></td>
     <td>46K</td>
     <td>6.9GB</td>
     <td>402GB</td>
     <td>801GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-2">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-2">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_pdm_v1.0-2">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-3.yaml">synthetic_reaction_pdm_v1.0-3</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-3.yaml">reaction_pdm_v1.0-3</a></td>
     <td>38K</td>
     <td>5.6GB</td>
     <td>333GB</td>
     <td>663GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-3">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-3">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_pdm_v1.0-3">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-4.yaml">synthetic_reaction_pdm_v1.0-4</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_pdm_v1.0-4.yaml">reaction_pdm_v1.0-4</a></td>
     <td>32K</td>
     <td>4.7GB</td>
     <td>279GB</td>
     <td>554GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-4">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_pdm_v1.0-4">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_pdm_v1.0-4">MS</a></td>
   </tr>
 
-  <th colspan="5">Recovery-based Pseudo-Expert</th>
+  <th colspan="6">Recovery-based Pseudo-Expert</th>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-0.yaml">synthetic_reaction_recovery_v1.0-0</a></td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-0.yaml">reaction_recovery_v1.0-0</a></td>
     <td>45K</td>
     <td>6.8GB</td>
     <td>395GB</td>
     <td>789GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-0">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-0">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_recovery_v1.0-0">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-1.yaml">synthetic_reaction_recovery_v1.0-1</td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-1.yaml">reaction_recovery_v1.0-1</td>
     <td>36K</td>
     <td>5.5GB</td>
     <td>316GB</td>
     <td>631GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-1">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-1">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_recovery_v1.0-1">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-2.yaml">synthetic_reaction_recovery_v1.0-2</td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-2.yaml">reaction_recovery_v1.0-2</td>
     <td>28K</td>
     <td>4.3GB</td>
     <td>244GB</td>
     <td>488GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-2">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-2">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_recovery_v1.0-2">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-3.yaml">synthetic_reaction_recovery_v1.0-3</td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-3.yaml">reaction_recovery_v1.0-3</td>
     <td>22K</td>
     <td>3.3GB</td>
     <td>189GB</td>
     <td>378GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-3">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-3">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_recovery_v1.0-3">MS</a></td>
   </tr>
 
   <tr>
-    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-4.yaml">synthetic_reaction_recovery_v1.0-4</td>
+    <td><a href="./navsim/planning/script/config/common/train_test_split/scene_filter/navtrain_reaction_recovery_v1.0-4.yaml">reaction_recovery_v1.0-4</td>
     <td>17K</td>
     <td>2.7GB</td>
     <td>148GB</td>
     <td>296GB</td>
+    <td><a href="https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-4">HF</a>+ 
+    <a href="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/tree/main/SimScale_data/synthetic_reaction_recovery_v1.0-4">HF_Fut</a> /
+    <a href="https://modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_data/synthetic_reaction_recovery_v1.0-4">MS</a></td>
   </tr>
 
 </table>
 
-</details>
 
 > [!TIP]
 > Before downloading, we recommend checking the table above to select the appropriate split and `sensor_blobs`.
 
 ### 2. Set Up Configuration
-We provide a [script](./tools/move.sh) for moving the download simulation data to create the following structure.
+We provide a [Script](./tools/move.sh) for moving the download simulation data to create the following structure.
 
 ```angular2html
 navsim_workspace/
@@ -329,12 +371,12 @@ navsim_workspace/
 ## ⚙️ Sim-Real Co-Training Recipe
 
 ### Preparation
-1. Refer the [script](./scripts/training/run_dataset_cache.sh) to cache the real-world and simulation data.
+1. Refer the [Script](./scripts/training/run_dataset_cache.sh) to cache the real-world and simulation data.
 2. Download pretrained image backbone weight, [ResNet34](https://huggingface.co/timm/resnet34.a1_in1k) or [V2_99](https://drive.google.com/file/d/1gQkhWERCzAosBwG5bh2BKkt1k0TJZt-A/view).
 
 
 ### Co-Training with Pseudo-Expert
-We provide [scripts](./scripts/training) for sim–real co-training, 
+We provide [Scripts](./scripts/training) for sim–real co-training, 
 *e.g.*, [run_diffusiondrive_training_syn.sh](./scripts/training/run_diffusiondrive_training_syn.sh).
 
 The main configuration options are as follows:
@@ -350,17 +392,17 @@ export SYN_GT=pdm  # pdm, recovery
 In addition, the cache path for simulation data is hard-coded in [dataset.py#136](./navsim/planning/training/dataset.py#L136). Please make sure the path is correctly set to your local simulation data directory before training.
 - **Regression-based Policy | *LTF***
 
-We provide a [script](./scripts/training/run_transfuser_training_syn.sh) to train LTF with 8 GPUs for 100 epochs.
+We provide a [Script](./scripts/training/run_transfuser_training_syn.sh) to train LTF with 8 GPUs for 100 epochs.
 
 - **Diffusion-based Policy | *DiffusionDrive***
 
-We provide a [script](./scripts/training/run_diffusiondrive_training_syn.sh) to train DiffusionDrive with 8 GPUs for 100 epochs.
+We provide a [Script](./scripts/training/run_diffusiondrive_training_syn.sh) to train DiffusionDrive with 8 GPUs for 100 epochs.
 
 - **Scoring-based Policy | *GTRS-Dense***
 
-We provide a [script](./scripts/training/run_gtrs_dense_training_multi_syn.sh) to train GTRS_Dense on 4 nodes, each with 8 GPUs, for 50 epochs.
+We provide a [Script](./scripts/training/run_gtrs_dense_training_multi_syn.sh) to train GTRS_Dense on 4 nodes, each with 8 GPUs, for 50 epochs.
 
-We also provides 🤗 [reward files](https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_rewards) for simulation data. Please download correspending files first and move them to `NAVSIM_TRAJPDM_ROOT/sim`. The reward files path is hard-coded in [gtrs_agent.py#223](./navsim/agents/gtrs_dense/gtrs_agent.py#223). Check it before training.
+We also provide 🤗 [Reward Files (Hugging Face)](https://huggingface.co/datasets/OpenDriveLab/SimScale/tree/main/SimScale_rewards) and 👾 [Reward Files (ModelScope)](https://www.modelscope.cn/datasets/OpenDriveLab/SimScale/tree/master/SimScale_rewards) (users in China) for rewards in simulation data.  Please download correspending files first and move them to `NAVSIM_TRAJPDM_ROOT/sim`. The reward files path is hard-coded in [gtrs_agent.py#223](./navsim/agents/gtrs_dense/gtrs_agent.py#223). Check it before training.
  
 
 ### Co-Training with Rewards Only
@@ -368,7 +410,7 @@ We also provides 🤗 [reward files](https://huggingface.co/datasets/OpenDriveLa
 - **Scoring-based Policy | *GTRS-Dense***
 
 It uses the same training 
-[script](./scripts/training/run_gtrs_dense_training_multi_syn.sh),
+[Script](./scripts/training/run_gtrs_dense_training_multi_syn.sh),
 to train GTRS_Dense on 4 nodes, each with 8 GPUs, for 50 epochs.
 
 The main configuration option is as follows:
@@ -380,15 +422,15 @@ syn_imi=false  # true, false
 
 ### Preparation
 
-Refer the [script](./scripts/evaluation/run_metric_caching.sh) to cache metric first.
+Refer the [Script](./scripts/evaluation/run_metric_caching.sh) to cache metric first.
 
 ### NAVSIM v2 navhard
 
-We provide [scripts](./scripts/evaluation_navhard) to evaluate three policies on [navhard](./navsim/planning/script/config/common/train_test_split/scene_filter/navhard_two_stage.yaml) using GPU inference.
+We provide [Scripts](./scripts/evaluation_navhard) to evaluate three policies on [navhard](./navsim/planning/script/config/common/train_test_split/scene_filter/navhard_two_stage.yaml) using GPU inference.
 
 ### NAVSIM v2 navtest
 
-We provide [scripts](./scripts/evaluation_navtest) to evaluate three policies  on [navtest](./navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml) using GPU inference.
+We provide [Scripts](./scripts/evaluation_navtest) to evaluate three policies  on [navtest](./navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml) using GPU inference.
 
 ## ❤️ Acknowledgements
 
@@ -411,17 +453,4 @@ If any parts of our paper and code help your research, please consider citing us
   year={2025}
 }
 ```
-
-
-
-
-
-<!-- <!-- <a href="https://twitter.com/OpenDriveLab" target="_blank">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/OpenDriveLab?style=social&color=brightgreen&logo=twitter" />
-  </a> -->
-<!-- 
-- | [Vista](https://github.com/OpenDriveLab/Vista) | 
-- [MTGS](https://github.com/OpenDriveLab/MTGS) | [OpenLane-V2](https://github.com/OpenDriveLab/OpenLane-V2) |  [OpenScene](https://github.com/OpenDriveLab/OpenScene) --> 
-
-
 
