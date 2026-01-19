@@ -37,3 +37,5 @@ dataset
 
 # running scripts
 scripts_dev/*
+
+.DS_Store

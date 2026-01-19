@@ -13,8 +13,8 @@
 [![ModelScope](https://img.shields.io/badge/modelscope-624AFF?style=for-the-badge&logo=modelscope&logoColor=white)](https://modelscope.cn/datasets/OpenDriveLab/SimScale) 
 [![License](https://img.shields.io/badge/Apache--2.0-019B8F?style=for-the-badge&logo=apache)](https://github.com/OpenDriveLab/SimScale/blob/main/LICENSE) 
 
-
 </div>
+
 <div id="top" align="center">
 <p align="center">
 <img src="assets/teaser.png" >
@@ -59,7 +59,7 @@
 
 
 ## 📋 TODO List
-- [ ] More Visualization Results.
+- [x] More Visualization Results.
 - [x] Future Sensors Data.
 - [x] Sim-Real Co-training Code release (Jan. 2026).
 - [x] Simulation Data release (Dec. 2025).
@@ -204,7 +204,7 @@ Our released simulation data is based on [nuPlan](https://www.nuscenes.org/nupla
 
 ### 1. Download Dataset
 
-We provide 🤗 [Script (Hugging Face)](./tools/download_hf.sh) and 👾 [Script (ModelScope)](./tools/download_ms.sh) (users in China) for downloading the simulation data .
+We provide 🤗 [Script (Hugging Face)](./tools/download_hf.sh) and 👾 [Script (ModelScope)](./tools/download_ms) (users in China) for downloading the simulation data .
 
 Our simulation data format follows that of [OpenScene](https://github.com/OpenDriveLab/OpenScene/blob/main/docs/getting_started.md#download-data), with each clip/log has a fixed temporal horizon of 6 seconds at 2 Hz (2 s history + 4 s future), which are stored separately in `sensor_blobs_hist` and `sensor_blobs_fut`, respectively. 
 **For policy training, `sensor_blobs_hist` alone is sufficient.**
@@ -337,9 +337,63 @@ Our simulation data format follows that of [OpenScene](https://github.com/OpenDr
 
 </table>
 
-
 > [!TIP]
 > Before downloading, we recommend checking the table above to select the appropriate split and `sensor_blobs`.
+
+#### 🏭 Simulation Data Pipeline
+
+<div id="top" align="center">
+<p align="center">
+<img src="assets/pipeline.png" >
+</p>
+</div>
+
+#### 🧩 Examples of Simulated Synthetic Data
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <p>5c9694f15f9c5537</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/5c9694f15f9c5537.png" />
+    </td>
+    <td align="center">
+      <p>367cfa28901257ee</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee.png"/>
+    </td>
+    <td align="center">
+      <p>d37c49db3dcd59fa</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/d37c49db3dcd59fa.png"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p>Sim. 1</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim1.gif" /><br/>
+      <p>Sim. 2</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim2.gif" /><br/>
+      <p>Sim. 3</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim3.gif" />
+    </td>
+    <td align="center">
+      <p>Sim. 1</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim1.gif" /><br/>
+      <p>Sim. 2</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim2.gif" /><br/>
+      <p>Sim. 3</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim3.gif"/>
+    </td>
+    <td align="center">
+      <p>Sim. 1</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/d37c49db3dcd59fa-sim1.gif" /><br/>
+      <p>Sim. 2</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/d37c49db3dcd59fa-sim2.gif" /><br/>
+      <p>Sim. 3</p>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/d37c49db3dcd59fa-sim3.gif" />
+    </td>
+  </tr>
+</table>
+
+
 
 ### 2. Set Up Configuration
 We provide a [Script](./tools/move.sh) for moving the download simulation data to create the following structure.
@@ -453,4 +507,3 @@ If any parts of our paper and code help your research, please consider citing us
   year={2025}
 }
 ```
-
