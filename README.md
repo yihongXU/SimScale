@@ -368,11 +368,11 @@ Our simulation data format follows that of [OpenScene](https://github.com/OpenDr
   <tr>
     <td align="center">
       <p>Sim. 1</p>
-      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim1.gif" /><br/>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/5c9694f15f9c5537-sim1.gif" /><br/>
       <p>Sim. 2</p>
-      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim2.gif" /><br/>
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/5c9694f15f9c5537-sim2.gif" /><br/>
       <p>Sim. 3</p>
-      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/367cfa28901257ee-sim3.gif" />
+      <img src="https://raw.githubusercontent.com/OpenDriveLab/opendrivelab.github.io/master/SimScale/github/5c9694f15f9c5537-sim3.gif" />
     </td>
     <td align="center">
       <p>Sim. 1</p>
