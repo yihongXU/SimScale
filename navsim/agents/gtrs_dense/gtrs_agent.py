@@ -229,7 +229,7 @@ class GTRSAgent(AbstractAgent):
         
         SYN_IDX = int(SYN_IDX)
         for idx in range(0, SYN_IDX + 1):
-            file_name = f"simcale_16384_{SYN_GT}_v1.0-{SYN_IDX}"
+            file_name = f"simcale_16384_{SYN_GT}_v1.0-{idx}"
             pdm_path = pdm_base / f"sim/{file_name}.pkl"
             pdm_file = pickle.load(open(pdm_path, 'rb'))
             self.vocab_pdm_score_full.update(pdm_file)
