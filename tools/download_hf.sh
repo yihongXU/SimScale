@@ -5,7 +5,7 @@ repo_fut="https://huggingface.co/datasets/OpenDriveLab-org/SimScale/resolve/main
 
 # 1. simulation data with planner-based pseudo-expert
 rounds=5
-splits=(66,56,47,39,33)
+splits=(66 56 47 39 33)
 
 for round in $(seq 0 $((rounds - 1))); do
     # 1. meta data
