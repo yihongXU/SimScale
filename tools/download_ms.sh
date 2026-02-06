@@ -7,7 +7,7 @@ repo=OpenDriveLab/SimScale
 
 # 1. simulation data with planner-based pseudo-expert
 rounds=5
-splits=(66,56,47,39,33)
+splits=(66 56 47 39 33)
 simscale_pdm_v1.0-0_sensor_blobs_fut_9.tar.gz
 for round in $(seq 0 $((rounds - 1))); do
     # 1. meta data
